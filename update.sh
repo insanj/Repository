@@ -1,8 +1,8 @@
 #!/bin/bash
-rm package{,.bz2}
-dpkg-scanpackages -m debs /dev/null > package
-bzip2 package
-ncftpput -u USERNAME -p PASSWORD FTPADDRESS.COM /public_html/repo/ CydiaIcon.png
-ncftpput -u USERNAME -p PASSWORD FTPADDRESS.COM /public_html/repo/ Release
-ncftpput -u USERNAME -p PASSWORD FTPADDRESS.COM /public_html/repo/debs/ debs/*
-ncftpput -u USERNAME -p PASSWORD FTPADDRESS.COM /public_html/repo/ package.bz2
+rm Packages{,.bz2}
+dpkg-scanpackages -m . > Packages
+bzip2 Packages
+ncftpput -u <username> -p <password> <ftp.address> repo/ CydiaIcon.png
+ncftpput -u <username> -p <password> <ftp.address> repo/ Release
+ncftpput -u <username> -p <password> <ftp.address> repo/Packages/ debs/*
+ncftpput -u <username> -p <password> <ftp.address> repo/ Packages.bz2
