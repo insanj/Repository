@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Neue;
+    src: url(http://www.insanj.com/orangered/neue.ttf);
+    font-weight:100;
+}
+
+@font-face {
+    font-family: Ultralight;
+    src: url(http://www.insanj.com/orangered/ultralight.ttf);
+    font-weight:100;
+}
+
+body {
+	background-color:white;
+	font-family:'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Helvetica, Arial, Ultralight, sans-serif;
+}
+
+#back{
+	position: fixed;
+	left:1px;
+	top:2px;
+}
+
+#twitter{
+	position: fixed;
+	right:1px;
+	bottom:-5px;
+}
+
+#paypal{
+	position: fixed;
+	right:35px;
+	bottom:-5px;
+}
+
+#commons{
+	position: fixed;
+	left:1px;
+	bottom:-5px;
+}
+
+a.title{
+	text-shadow: 0 1px 0 white;
+	text-decoration:none;
+	color:inherit;
+}
+
+a.title:hover{
+	text-shadow: 0 1px 0 lightgray;
+}
+
+h1{
+	color:gray;
+	font-family: Arial, sans-serif;
+
+	top:-3%;
+	position: absolute;
+	text-align:center;
+	width:98%;
+
+	font-weight:100; /* fuck you too, css */
+	letter-spacing:1px;
+	text-shadow: 0 0.85px 0 orange;
+	font-size:600%;
+	opacity:1.0;
+}
+
+h2{
+	top:12%;
+	position: absolute;
+	text-align:center;
+	width:98%;
+
+	font-weight:100; 
+	letter-spacing:0.5px;
+	text-shadow: 0 1px 0 lightblue;
+	font-size:300%;
+	opacity:0.3;
+}
+
+hr.big {
+	top:27%;
+	position: absolute;
+	text-align:center;
+	width:98%;
+
+  	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.2), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.2), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.2), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.2), rgba(0,0,0,0));
+}
+
+hr.small {
+	margin-top:-3px;
+	text-align:center;
+	width:98%;
+
+  	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+}
+
+div.text {
+	top:30%;
+	left:23.5%;
+	right:20%;
+	position: absolute;
+	width:60%;
+	padding-bottom:5%;
+
+	font-family:'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, Neue, sans-serif;
+}
+
+div.bodytext {
+	top:36%;
+	left:13%;
+	right:20%;
+	position: absolute;
+	width:74%;
+	padding-bottom:5%;
+
+	font-family:'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, Neue, sans-serif;
+}
+
+img.icon{
+	padding:5px;
+	width:60px;
+	height:60px;
+}
+
+
+a{
+	text-shadow: 0px 1px 1px rgba(0, 128, 128, 0.4);
+	text-decoration:none;
+	color:inherit;
+}
+
+a:hover{
+	text-shadow: 0px 1px 1px rgba(0, 128, 128, 0.8);
+}
+
+.container-outer{
+	overflow-y: hidden;
+	overflow-x: scroll;
+	height: 500px;
+}
+
+.container-inner{ 
+	height: 113%;
+	width: 3500px;
+}
